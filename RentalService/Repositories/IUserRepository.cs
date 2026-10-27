@@ -2,7 +2,7 @@ using RentalService.Domain;
 
 namespace RentalService.Repositories;
 
-public interface IUserRepositories
+public interface IUserRepository
 {
     void Add(User user);
     User? GetById(Guid id);
