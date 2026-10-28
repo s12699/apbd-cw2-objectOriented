@@ -47,7 +47,7 @@ public class RentalManager
         return rental;
     }
 
-    public Rental Returtn(Guid rentalId, DateTime returnedAt)
+    public Rental Return(Guid rentalId, DateTime returnedAt)
     {
         var rental = _rentals.GetById(rentalId) ?? throw new EntityNotFoundException(rentalId);
 
